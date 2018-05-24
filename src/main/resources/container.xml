@@ -16,14 +16,13 @@
 		<constructor-arg value='3'/>
 	</bean>
 	<bean id='helpDeskMedewerkers' class='be.vdab.HelpDeskMedewerkers'>
-      <property name='namen'>
-        <list> 
-          <value>Joe</value> 
-          <value>Jack</value>
-          <value>William</value>
-          <value>Averell</value>
-          <value>Joe</value> 
-        </list>
-      </property>
+  	  <constructor-arg>
+  	    <map>
+          <entry key='Joe' value='123'/> 
+          <entry key='Jack' value='456'/>
+          <entry key='William' value='789'/>
+          <entry key='Averell' value='012'/>
+        </map>
+      </constructor-arg>    
     </bean>
 </beans>
