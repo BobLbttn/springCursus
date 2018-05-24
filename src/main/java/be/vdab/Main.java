@@ -15,6 +15,7 @@ public class Main {
 			System.out.println("Bestand bestaat: " + objectA.getImportData().exists());
 			System.out.println(objectA.getDefaultBladRichting());
 			System.out.println(objectA.getWebMasterEMailAdres());
+			System.out.println(objectA.getWebsiteGestart());
 			ClassB objectB = context.getBean(ClassB.class);
 			System.out.println(objectB.getTelefoonNrHelpDesk());
 			System.out.println(objectB.getAantalPogingenUpdateKlant());
