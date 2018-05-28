@@ -14,6 +14,6 @@ public class EuroService {
 	}
 	
 	public BigDecimal naarDollar(BigDecimal euro) {
-		return euro.multiply(koersenClient.getDollarKoers().setScale(2, RoundingMode.HALF_UP));
+		return euro.multiply(koersenClient.getDollarKoers().setScale(4, RoundingMode.HALF_UP));
 	}
 }
